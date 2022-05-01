@@ -8,14 +8,14 @@ VALUES  ("engineering"),
 SELECT *  FROM department;
    
 
-INSERT INTO role_id (title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
 VALUES ("UX lead des", 100,000, 1)
        ("Product manager", 100,000, 1)
        ("Sales rep", 100,000, 4)
        ("Fullstack dev", 100,000,1)
        ("Marketing lead", 100,000,3)
        ("Accoutant", 100,000, 2)
-SELECT * FROM role_id;
+SELECT * FROM role;
 
 INSERT INTO employee(first_name, last_name, role_id, manager_id, department_id)
 VALUES ("Wally","Schang",1,3)

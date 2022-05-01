@@ -1,6 +1,6 @@
-SELECT reviews.review, reviews.movie_id, movies.movie_name
-AS movie
-FROM reviews
-JOIN movies
-ON movies_id =reviews.movie_id 
-ORDER BY movies.movie_name;
+SELECT department.department_id, role.role_id,employee.manager_id 
+AS department
+FROM role
+JOIN employee
+ON  department.department_id = employee.manager_id
+ORDER BY role.department_id;
